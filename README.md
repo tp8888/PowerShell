@@ -1,6 +1,6 @@
 # 💻 PowerShell Labs & Upskilling
 
-Welcome to my central repository for PowerShell automation and security research. This project documents my transition from a career in automotive technology into **Cybersecurity**, focusing on leveraging PowerShell for system administration, threat hunting, and infrastructure management.
+Welcome to my central repository for PowerShell automation and security research. This project documents my professional growth in **Cybersecurity**, focusing on leveraging PowerShell for system administration, threat hunting, and infrastructure management.
 
 ## 🎯 Project Goals
 The objective of this repository is to build a library of reusable scripts and detailed "Threat-Brief" style documentation that demonstrates proficiency in:
@@ -13,7 +13,7 @@ The objective of this repository is to build a library of reusable scripts and d
 ## 🏗️ Lab Architecture: Multi-VM Enterprise Environment
 To simulate a true corporate network, this lab utilizes a multi-VM architecture hosted in Oracle VirtualBox. This allows for testing remote administration and network-based security controls.
 
-* **Domain Controller:** Windows Server 2019 (`Honeynet.local`)
+* **Domain Controller:** Windows Server 2019 (`ad.lab`)
 * **Management Workstation:** Windows Enterprise (Version 22H2)
 * **Connectivity:** Isolated via VirtualBox Internal Network to ensure a safe testing perimeter.
 * **Tools:** Remote Server Administration Tools (RSAT) installed on the workstation to manage the DC via PowerShell.
