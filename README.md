@@ -1,6 +1,6 @@
 # 💻 PowerShell Labs & Upskilling
 
-Welcome to my central repository for PowerShell automation and security research. This project documents my transition into **Cybersecurity**, focusing on leveraging PowerShell for system administration, threat hunting, and infrastructure management.
+Welcome to my central repository for PowerShell automation and security research. This project documents my transition from a career in automotive technology into **Cybersecurity**, focusing on leveraging PowerShell for system administration, threat hunting, and infrastructure management.
 
 ## 🎯 Project Goals
 The objective of this repository is to build a library of reusable scripts and detailed "Threat-Brief" style documentation that demonstrates proficiency in:
@@ -10,18 +10,25 @@ The objective of this repository is to build a library of reusable scripts and d
 
 ---
 
-## 🛠️ Lab Environment: The "Golden Image" Workflow
-All scripts in this repository are developed and tested within a dedicated **Windows Enterprise VM** in Oracle VirtualBox. 
+## 🏗️ Lab Architecture: Multi-VM Enterprise Environment
+To simulate a true corporate network, this lab utilizes a multi-VM architecture hosted in Oracle VirtualBox. This allows for testing remote administration and network-based security controls.
 
-To ensure a safe and repeatable testing environment, I utilize the following workflow:
-1. **Base Configuration:** A clean install of Windows Enterprise with RSAT installed.
+* **Domain Controller:** Windows Server 2019 (`Honeynet.local`)
+* **Management Workstation:** Windows Enterprise (Version 22H2)
+* **Connectivity:** Isolated via VirtualBox Internal Network to ensure a safe testing perimeter.
+* **Tools:** Remote Server Administration Tools (RSAT) installed on the workstation to manage the DC via PowerShell.
+
+---
+
+## 🛠️ The "Golden Image" Workflow
+I utilize a strict snapshot strategy to maintain environment integrity:
+1. **Base Configuration:** Clean OS installs with all necessary modules pre-loaded.
 2. **Snapshots:** A "Golden Image" snapshot is taken before any script execution.
-3. **Rollback:** After testing high-impact scripts, the VM is rolled back to the clean state.
+3. **Rollback:** After testing high-impact or destructive scripts (like bulk user management or GPO changes), the workstation VM is rolled back to a clean state.
 
 ---
 
 ## 📂 Active Directory Toolkit: 10-Lab Roadmap
-I am currently working through a 10-lab curriculum focused on Enterprise Directory management and security.
 
 1. **[Lab 01: Environment & Module Verification](./Active-Directory-Toolkit/01-Environment-Verification.md)** ✅
 2. **[Lab 02: Automated Bulk User Creation](./Active-Directory-Toolkit/02-Bulk-User-Creation.md)** ✅
@@ -38,7 +45,7 @@ I am currently working through a 10-lab curriculum focused on Enterprise Directo
 
 ## 👨‍💻 About the Author
 **Thomas Price**
-*Cybersecurity Professional | Former Honda Master Technician*
+*Cybersecurity Professional*
 
 **Current Certifications:**
 * GIAC Foundational Cybersecurity Technologies (**GFACT**)
