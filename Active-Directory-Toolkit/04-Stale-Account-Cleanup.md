@@ -54,7 +54,7 @@ if ($null -eq $UsersToDisable) {
 ```
 
 ![AlllNever Disable](../images/never_disable.png)
-> * Never Disable.*
+> *Never Disable.*
 
 ---
 
