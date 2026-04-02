@@ -66,7 +66,7 @@ Enable-ADAccount -Identity "thomas.price" -Server "ad.lab"
 ```
 
 images/emergencyreenable.png
-![AllEmergency Reenable](../images/emergencyreenable)
+![AllEmergency Reenable](../images/emergencyreenable.png)
 > *Emergency Reenable.*
 
 ### 2. Adjusting Execution Policy
