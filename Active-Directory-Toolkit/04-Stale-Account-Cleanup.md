@@ -65,7 +65,6 @@ Enable-ADAccount -Identity "Administrator" -Server "ad.lab"
 Enable-ADAccount -Identity "thomas.price" -Server "ad.lab"
 ```
 
-images/emergencyreenable.png
 ![AllEmergency Reenable](../images/emergencyreenable.png)
 > *Emergency Reenable.*
 
