@@ -30,6 +30,7 @@ I utilize a strict snapshot strategy to maintain environment integrity:
 
 ## 📂 Active Directory Toolkit: 10-Lab Roadmap
 
+0. **[Lab 00: Vulnerable AD Configuration](./Active-Directory-Toolkit/00-Vulnerable-AD-Configuration.md)** ✅
 1. **[Lab 01: Environment & Module Verification](./Active-Directory-Toolkit/01-Environment-Verification.md)** ✅
 2. **[Lab 02: Automated Bulk User Creation](./Active-Directory-Toolkit/02-Bulk-User-Creation.md)** ✅
 3. **[Lab 03: Privileged Group Membership Audit](./Active-Directory-Toolkit/03-Privileged-Group-Audit.md)** 🟡
