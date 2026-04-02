@@ -2,7 +2,7 @@
 
 **Scenario:** To reduce the attack surface of the `ad.lab` domain, the SOC must identify and disable inactive user accounts. However, automation must be tempered with safety controls (Whitelisting) to ensure critical administrative or service accounts are never accidentally disabled, which could lead to a Domain-wide Denial of Service (DoS).
 
-./images/allaccounts diabled.png
+../images/allaccounts diabled.png
 
 
 ## 📝 Objective
