@@ -65,6 +65,10 @@ Enable-ADAccount -Identity "Administrator" -Server "ad.lab"
 Enable-ADAccount -Identity "thomas.price" -Server "ad.lab"
 ```
 
+images/emergencyreenable.png
+![AllEmergency Reenable](../images/emergencyreenable)
+> *Emergency Reenable.*
+
 ### 2. Adjusting Execution Policy
 Required to allow the execution of local `.ps1` scripts on the Windows 10 workstation.
 ```powershell
