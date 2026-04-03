@@ -86,7 +86,7 @@ Start-ScheduledTask -TaskName "CyberRange FIM Agent"
 
 To validate the effectiveness of the File System Watcher, test files and directories were introduced to the monitored `SensitiveData` directory. The lifecycle of the files was manipulated to trigger various event types (Creation, Renaming, Modification, and Deletion). As shown in the management console below, the agent successfully detected and logged every stage of the file modifications.
 
-![FIM Management](./fim_management.png)
+![FIM Management](../images/fim_management.png)
 
 ## 🔍 Conclusion
 This custom FIM tool successfully demonstrates the core mechanics behind enterprise Endpoint Detection and Response (EDR) agents. By establishing persistence as a `SYSTEM` service and capturing file system events in real-time, analysts can quietly monitor critical directories and generate permanent logs of unauthorized modifications before a threat actor can fully compromise the environment.
